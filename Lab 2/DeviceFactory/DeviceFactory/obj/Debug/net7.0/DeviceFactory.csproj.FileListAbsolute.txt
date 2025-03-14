@@ -1,0 +1,15 @@
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/DeviceFactory/DeviceFactory/bin/Debug/net7.0/DeviceFactory
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/DeviceFactory/DeviceFactory/bin/Debug/net7.0/DeviceFactory.deps.json
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/DeviceFactory/DeviceFactory/bin/Debug/net7.0/DeviceFactory.runtimeconfig.json
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/DeviceFactory/DeviceFactory/bin/Debug/net7.0/DeviceFactory.dll
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/DeviceFactory/DeviceFactory/bin/Debug/net7.0/DeviceFactory.pdb
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/DeviceFactory/DeviceFactory/obj/Debug/net7.0/DeviceFactory.csproj.AssemblyReference.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/DeviceFactory/DeviceFactory/obj/Debug/net7.0/DeviceFactory.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/DeviceFactory/DeviceFactory/obj/Debug/net7.0/DeviceFactory.AssemblyInfoInputs.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/DeviceFactory/DeviceFactory/obj/Debug/net7.0/DeviceFactory.AssemblyInfo.cs
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/DeviceFactory/DeviceFactory/obj/Debug/net7.0/DeviceFactory.csproj.CoreCompileInputs.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/DeviceFactory/DeviceFactory/obj/Debug/net7.0/DeviceFactory.dll
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/DeviceFactory/DeviceFactory/obj/Debug/net7.0/refint/DeviceFactory.dll
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/DeviceFactory/DeviceFactory/obj/Debug/net7.0/DeviceFactory.pdb
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/DeviceFactory/DeviceFactory/obj/Debug/net7.0/DeviceFactory.genruntimeconfig.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/DeviceFactory/DeviceFactory/obj/Debug/net7.0/ref/DeviceFactory.dll

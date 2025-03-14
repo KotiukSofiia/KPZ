@@ -1,0 +1,15 @@
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Virus/Virus/bin/Debug/net7.0/Virus
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Virus/Virus/bin/Debug/net7.0/Virus.deps.json
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Virus/Virus/bin/Debug/net7.0/Virus.runtimeconfig.json
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Virus/Virus/bin/Debug/net7.0/Virus.dll
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Virus/Virus/bin/Debug/net7.0/Virus.pdb
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Virus/Virus/obj/Debug/net7.0/Virus.csproj.AssemblyReference.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Virus/Virus/obj/Debug/net7.0/Virus.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Virus/Virus/obj/Debug/net7.0/Virus.AssemblyInfoInputs.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Virus/Virus/obj/Debug/net7.0/Virus.AssemblyInfo.cs
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Virus/Virus/obj/Debug/net7.0/Virus.csproj.CoreCompileInputs.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Virus/Virus/obj/Debug/net7.0/Virus.dll
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Virus/Virus/obj/Debug/net7.0/refint/Virus.dll
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Virus/Virus/obj/Debug/net7.0/Virus.pdb
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Virus/Virus/obj/Debug/net7.0/Virus.genruntimeconfig.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Virus/Virus/obj/Debug/net7.0/ref/Virus.dll

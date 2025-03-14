@@ -1,0 +1,15 @@
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Authenticator/Authenticator/obj/Debug/net7.0/Authenticator.csproj.AssemblyReference.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Authenticator/Authenticator/obj/Debug/net7.0/Authenticator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Authenticator/Authenticator/obj/Debug/net7.0/Authenticator.AssemblyInfoInputs.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Authenticator/Authenticator/obj/Debug/net7.0/Authenticator.AssemblyInfo.cs
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Authenticator/Authenticator/obj/Debug/net7.0/Authenticator.csproj.CoreCompileInputs.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Authenticator/Authenticator/bin/Debug/net7.0/Authenticator
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Authenticator/Authenticator/bin/Debug/net7.0/Authenticator.deps.json
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Authenticator/Authenticator/bin/Debug/net7.0/Authenticator.runtimeconfig.json
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Authenticator/Authenticator/bin/Debug/net7.0/Authenticator.dll
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Authenticator/Authenticator/bin/Debug/net7.0/Authenticator.pdb
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Authenticator/Authenticator/obj/Debug/net7.0/Authenticator.dll
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Authenticator/Authenticator/obj/Debug/net7.0/refint/Authenticator.dll
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Authenticator/Authenticator/obj/Debug/net7.0/Authenticator.pdb
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Authenticator/Authenticator/obj/Debug/net7.0/Authenticator.genruntimeconfig.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/Authenticator/Authenticator/obj/Debug/net7.0/ref/Authenticator.dll

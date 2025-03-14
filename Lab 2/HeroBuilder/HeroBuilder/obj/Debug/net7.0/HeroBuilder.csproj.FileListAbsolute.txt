@@ -1,0 +1,15 @@
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/HeroBuilder/HeroBuilder/bin/Debug/net7.0/HeroBuilder
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/HeroBuilder/HeroBuilder/bin/Debug/net7.0/HeroBuilder.deps.json
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/HeroBuilder/HeroBuilder/bin/Debug/net7.0/HeroBuilder.runtimeconfig.json
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/HeroBuilder/HeroBuilder/bin/Debug/net7.0/HeroBuilder.dll
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/HeroBuilder/HeroBuilder/bin/Debug/net7.0/HeroBuilder.pdb
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/HeroBuilder/HeroBuilder/obj/Debug/net7.0/HeroBuilder.csproj.AssemblyReference.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/HeroBuilder/HeroBuilder/obj/Debug/net7.0/HeroBuilder.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/HeroBuilder/HeroBuilder/obj/Debug/net7.0/HeroBuilder.AssemblyInfoInputs.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/HeroBuilder/HeroBuilder/obj/Debug/net7.0/HeroBuilder.AssemblyInfo.cs
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/HeroBuilder/HeroBuilder/obj/Debug/net7.0/HeroBuilder.csproj.CoreCompileInputs.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/HeroBuilder/HeroBuilder/obj/Debug/net7.0/HeroBuilder.dll
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/HeroBuilder/HeroBuilder/obj/Debug/net7.0/refint/HeroBuilder.dll
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/HeroBuilder/HeroBuilder/obj/Debug/net7.0/HeroBuilder.pdb
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/HeroBuilder/HeroBuilder/obj/Debug/net7.0/HeroBuilder.genruntimeconfig.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/HeroBuilder/HeroBuilder/obj/Debug/net7.0/ref/HeroBuilder.dll

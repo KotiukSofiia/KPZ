@@ -1,0 +1,15 @@
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/SubscriptionforProvider/SubscriptionforProvider/bin/Debug/net7.0/SubscriptionforProvider
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/SubscriptionforProvider/SubscriptionforProvider/bin/Debug/net7.0/SubscriptionforProvider.deps.json
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/SubscriptionforProvider/SubscriptionforProvider/bin/Debug/net7.0/SubscriptionforProvider.runtimeconfig.json
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/SubscriptionforProvider/SubscriptionforProvider/bin/Debug/net7.0/SubscriptionforProvider.dll
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/SubscriptionforProvider/SubscriptionforProvider/bin/Debug/net7.0/SubscriptionforProvider.pdb
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/SubscriptionforProvider/SubscriptionforProvider/obj/Debug/net7.0/SubscriptionforProvider.csproj.AssemblyReference.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/SubscriptionforProvider/SubscriptionforProvider/obj/Debug/net7.0/SubscriptionforProvider.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/SubscriptionforProvider/SubscriptionforProvider/obj/Debug/net7.0/SubscriptionforProvider.AssemblyInfoInputs.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/SubscriptionforProvider/SubscriptionforProvider/obj/Debug/net7.0/SubscriptionforProvider.AssemblyInfo.cs
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/SubscriptionforProvider/SubscriptionforProvider/obj/Debug/net7.0/SubscriptionforProvider.csproj.CoreCompileInputs.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/SubscriptionforProvider/SubscriptionforProvider/obj/Debug/net7.0/SubscriptionforProvider.dll
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/SubscriptionforProvider/SubscriptionforProvider/obj/Debug/net7.0/refint/SubscriptionforProvider.dll
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/SubscriptionforProvider/SubscriptionforProvider/obj/Debug/net7.0/SubscriptionforProvider.pdb
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/SubscriptionforProvider/SubscriptionforProvider/obj/Debug/net7.0/SubscriptionforProvider.genruntimeconfig.cache
+/Users/sofiakotuk/Desktop/Політех/2 курс/2 семестр/Конструювання пз/Lab 2/SubscriptionforProvider/SubscriptionforProvider/obj/Debug/net7.0/ref/SubscriptionforProvider.dll
