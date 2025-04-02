@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{CC259D04-4632-4A6C-A965-9B69D4211344}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Decorator/IHero.cs">
+    <Files>
+      <File FileName="Decorator/Program.cs" Line="34" Column="1" />
+      <File FileName="Decorator/IHero.cs" Line="6" Column="33" />
+      <File FileName="Decorator/Warrior.cs" Line="9" Column="10" />
+      <File FileName="Decorator/Mage.cs" Line="9" Column="10" />
+      <File FileName="Decorator/Paladin.cs" Line="9" Column="10" />
+      <File FileName="Decorator/ClothingDecorator.cs" Line="24" Column="1" />
+      <File FileName="Decorator/WeaponDecorator.cs" Line="24" Column="1" />
+      <File FileName="Decorator/ArtifactDecorator.cs" Line="24" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Decorator" expanded="True">
+            <Node name="Decorator">
+              <Node name="Decorators" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Decorator PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
