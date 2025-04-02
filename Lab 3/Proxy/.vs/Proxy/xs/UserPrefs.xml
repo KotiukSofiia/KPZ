@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{C1CAFDC9-552C-4039-8332-E3E4EC33ECB0}|Default">
+  <MonoDevelop.Ide.ItemProperties.Proxy PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Proxy/Program.cs">
+    <Files>
+      <File FileName="Proxy/Program.cs" Line="15" Column="43" />
+      <File FileName="Proxy/SmartTextReader.cs" Line="8" Column="36" />
+      <File FileName="Proxy/SmartTextChecker.cs" Line="17" Column="1" />
+      <File FileName="Proxy/SmartTextReaderLocker.cs" Line="19" Column="26" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Proxy" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
