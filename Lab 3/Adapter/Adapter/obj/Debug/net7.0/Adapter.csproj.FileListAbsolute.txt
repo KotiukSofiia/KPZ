@@ -1,0 +1,15 @@
+/Users/sofiakotuk/Projects/KPZ/Lab 1/Adapter/Adapter/bin/Debug/net7.0/Adapter
+/Users/sofiakotuk/Projects/KPZ/Lab 1/Adapter/Adapter/bin/Debug/net7.0/Adapter.deps.json
+/Users/sofiakotuk/Projects/KPZ/Lab 1/Adapter/Adapter/bin/Debug/net7.0/Adapter.runtimeconfig.json
+/Users/sofiakotuk/Projects/KPZ/Lab 1/Adapter/Adapter/bin/Debug/net7.0/Adapter.dll
+/Users/sofiakotuk/Projects/KPZ/Lab 1/Adapter/Adapter/bin/Debug/net7.0/Adapter.pdb
+/Users/sofiakotuk/Projects/KPZ/Lab 1/Adapter/Adapter/obj/Debug/net7.0/Adapter.csproj.AssemblyReference.cache
+/Users/sofiakotuk/Projects/KPZ/Lab 1/Adapter/Adapter/obj/Debug/net7.0/Adapter.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sofiakotuk/Projects/KPZ/Lab 1/Adapter/Adapter/obj/Debug/net7.0/Adapter.AssemblyInfoInputs.cache
+/Users/sofiakotuk/Projects/KPZ/Lab 1/Adapter/Adapter/obj/Debug/net7.0/Adapter.AssemblyInfo.cs
+/Users/sofiakotuk/Projects/KPZ/Lab 1/Adapter/Adapter/obj/Debug/net7.0/Adapter.csproj.CoreCompileInputs.cache
+/Users/sofiakotuk/Projects/KPZ/Lab 1/Adapter/Adapter/obj/Debug/net7.0/Adapter.dll
+/Users/sofiakotuk/Projects/KPZ/Lab 1/Adapter/Adapter/obj/Debug/net7.0/refint/Adapter.dll
+/Users/sofiakotuk/Projects/KPZ/Lab 1/Adapter/Adapter/obj/Debug/net7.0/Adapter.pdb
+/Users/sofiakotuk/Projects/KPZ/Lab 1/Adapter/Adapter/obj/Debug/net7.0/Adapter.genruntimeconfig.cache
+/Users/sofiakotuk/Projects/KPZ/Lab 1/Adapter/Adapter/obj/Debug/net7.0/ref/Adapter.dll

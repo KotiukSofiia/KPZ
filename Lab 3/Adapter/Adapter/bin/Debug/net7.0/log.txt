@@ -1,0 +1,21 @@
+[LOG]: System started
+[WARN]: Low battery
+[ERROR]: System failure
+Log: This is a log message written to file.
+Error: This is an error message written to file.
+Warn: This is a warning message written to file.
+Log: This is a log message written to file.
+Error: This is an error message written to file.
+Warn: This is a warning message written to file.
+Log: This is a log message written to file.
+Error: This is an error message written to file.
+Warn: This is a warning message written to file.
+Log: This is a log message written to file.
+Error: This is an error message written to file.
+Warn: This is a warning message written to file.
+Log: This is a log message written to file.
+Error: This is an error message written to file.
+Warn: This is a warning message written to file.
+Log: This is a log message written to file.
+Error: This is an error message written to file.
+Warn: This is a warning message written to file.
