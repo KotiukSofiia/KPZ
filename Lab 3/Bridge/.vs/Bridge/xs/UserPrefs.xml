@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{F83BC544-ECC0-4081-B405-7F109FE55FCF}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Bridge PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Bridge/Interfaces/IRenderingStrategy.cs">
+    <Files>
+      <File FileName="Bridge/Program.cs" />
+      <File FileName="Bridge/Shape.cs" />
+      <File FileName="Bridge/Circle.cs" />
+      <File FileName="Bridge/Square.cs" />
+      <File FileName="Bridge/Triangle.cs" />
+      <File FileName="Bridge/IRenderingStrategy.cs" Line="3" Column="2" />
+      <File FileName="Bridge/VectorRenderingStrategy.cs" />
+      <File FileName="Bridge/RasterRenderingStrategy.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Bridge" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
