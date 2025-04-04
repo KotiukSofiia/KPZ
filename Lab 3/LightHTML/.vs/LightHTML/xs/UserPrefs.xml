@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{C5062FB3-30E7-45B3-BAA7-B497FDAA56C7}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.LightHTML PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LightHTML/LightElementNode.cs">
+    <Files>
+      <File FileName="LightHTML/Program.cs" Line="45" Column="24" />
+      <File FileName="LightHTML/LightNode.cs" Line="8" Column="6" />
+      <File FileName="LightHTML/LightTextNode.cs" Line="23" Column="1" />
+      <File FileName="LightHTML/LightElementNode.cs" Line="80" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LightHTML" expanded="True">
+            <Node name="LightHTML" expanded="True">
+              <Node name="LightElementNode.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
