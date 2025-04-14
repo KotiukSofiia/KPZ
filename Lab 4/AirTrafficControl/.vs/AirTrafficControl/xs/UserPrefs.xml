@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{D1BB8B2C-CBF0-40AD-8BD2-01ADA62AE27F}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AirTrafficControl/Program.cs">
+    <Files>
+      <File FileName="AirTrafficControl/Program.cs" Line="22" Column="6" />
+      <File FileName="AirTrafficControl/Aircraft.cs" Line="5" Column="6" />
+      <File FileName="AirTrafficControl/Runway.cs" Line="20" Column="1" />
+      <File FileName="AirTrafficControl/CommandCentre.cs" Line="46" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AirTrafficControl" expanded="True">
+            <Node name="AirTrafficControl">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.AirTrafficControl PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
