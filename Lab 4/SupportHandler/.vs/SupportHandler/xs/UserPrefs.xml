@@ -1,30 +1,26 @@
 ﻿<Properties StartupConfiguration="{4E8E9CFE-A719-43AA-AB37-68EC59ECD51C}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SupportHandler/Handlers/LevelFourHandler.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SupportHandler PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SupportHandler/Program.cs">
     <Files>
-      <File FileName="SupportHandler/Program.cs" />
-      <File FileName="SupportHandler/SupportHandler.cs" />
-      <File FileName="SupportHandler/LevelOneHandler.cs" />
-      <File FileName="SupportHandler/LevelTwoHandler.cs" />
-      <File FileName="SupportHandler/LevelThreeHandler.cs" />
-      <File FileName="SupportHandler/LevelFourHandler.cs" Line="14" Column="36" />
+      <File FileName="SupportHandler/Program.cs" Line="18" Column="1" />
+      <File FileName="SupportHandler/SupportHandler.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="SupportHandler" expanded="True">
+          <Node name="SupportHandler">
             <Node name="SupportHandler">
-              <Node name="Handlers" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.SupportHandler PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
