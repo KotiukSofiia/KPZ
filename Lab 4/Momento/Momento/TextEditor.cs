@@ -11,16 +11,13 @@ namespace Momento
             _document = document;
         }
 
-        // Метод для зміни тексту в документі
         public void Edit(string newContent)
         {
-            // Зберігаємо поточний стан перед змінами
             _history.Push(_document.CreateMemento());
             _document.Content = newContent;
             Console.WriteLine("Edited Content: " + _document.Content);
         }
 
-        // Метод для скасування змін
         public void Undo()
         {
             if (_history.Count == 0)
