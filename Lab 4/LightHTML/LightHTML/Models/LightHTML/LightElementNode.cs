@@ -5,11 +5,11 @@ namespace LightHTML
 {
     public class LightElementNode : LightNode
     {
-        private string tagName;
-        private string displayType;
-        private bool isSelfClosing;
-        private List<string> cssClasses;
-        private List<LightNode> children;
+        protected string tagName;
+        protected string displayType;
+        protected bool isSelfClosing;
+        protected List<string> cssClasses;
+        protected List<LightNode> children;
 
         public LightElementNode(string tagName, string displayType = "block", bool isSelfClosing = false)
         {
