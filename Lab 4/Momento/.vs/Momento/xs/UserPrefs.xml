@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{AA8D3FED-4C23-4E51-A796-A493AD466D01}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Momento/TextEditor.cs">
+    <Files>
+      <File FileName="Momento/Program.cs" Line="16" Column="1" />
+      <File FileName="Momento/TextDocument.cs" Line="29" Column="1" />
+      <File FileName="Momento/TextDocumentMemento.cs" Line="13" Column="1" />
+      <File FileName="Momento/TextEditor.cs" Line="37" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Momento" expanded="True">
+            <Node name="Momento" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Momento PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
