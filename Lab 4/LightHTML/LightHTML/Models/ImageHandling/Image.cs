@@ -19,10 +19,9 @@ namespace LightHTML
 
         public void LoadImage(string href)
         {
-            _loadStrategy.LoadImage(href);  // Викликаємо стратегію для завантаження зображення
+            _loadStrategy.LoadImage(href); 
         }
 
-        // Оновлений метод GetOuterHtml для додавання атрибута src
         public override string GetOuterHtml(int indentLevel = 0)
         {
             string indent = new string(' ', indentLevel * 2);
@@ -33,7 +32,6 @@ namespace LightHTML
                 outerHtml += " class=\"" + string.Join(" ", cssClasses) + "\"";
             }
 
-            // Додаємо атрибут src
             outerHtml += $" src=\"{_src}\"";
 
             if (isSelfClosing)

@@ -40,11 +40,9 @@ namespace LightHTML
             IImageLoadStrategy localStrategy = new LocalImageLoadStrategy();
             Image localImage = new Image("localimage.jpg", localStrategy);
 
-            // Використовуємо стратегію для завантаження з мережі
             IImageLoadStrategy networkStrategy = new NetworkImageLoadStrategy();
             Image networkImage = new Image("http://example.com/image.jpg", networkStrategy);
 
-            // Тестуємо виведення HTML елементів
             Console.WriteLine("Created Image elements:");
             Console.WriteLine(localImage.GetOuterHtml());
             Console.WriteLine(networkImage.GetOuterHtml());
