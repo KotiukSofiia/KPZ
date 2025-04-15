@@ -1,33 +1,30 @@
 ﻿<Properties StartupConfiguration="{C5062FB3-30E7-45B3-BAA7-B497FDAA56C7}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="LightHTML/Models/ImageHandling/Image.cs">
+  <MonoDevelop.Ide.ItemProperties.LightHTML PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LightHTML/Program.cs">
     <Files>
-      <File FileName="LightHTML/Program.cs" Line="46" Column="1" />
-      <File FileName="LightHTML/Models/LightElementNode.cs" Line="12" Column="18" />
-      <File FileName="LightHTML/HTMLNodeFactory.cs" Line="23" Column="6" />
-      <File FileName="LightHTML/Models/LightNode.cs" Line="18" Column="1" />
-      <File FileName="LightHTML/Models/LightTextNode.cs" Line="25" Column="1" />
-      <File FileName="LightHTML/IImageLoadStrategy.cs" Line="9" Column="1" />
-      <File FileName="LightHTML/LocalImageLoadStrategy.cs" Line="9" Column="1" />
-      <File FileName="LightHTML/NetworkImageLoadStrategy.cs" Line="9" Column="1" />
-      <File FileName="LightHTML/Image.cs" Line="35" Column="1" />
+      <File FileName="LightHTML/Program.cs" Line="11" Column="6" />
+      <File FileName="LightHTML/LightNode.cs" Line="12" Column="1" />
+      <File FileName="LightHTML/LightTextNode.cs" Line="25" Column="1" />
+      <File FileName="LightHTML/LightElementNode.cs" Line="9" Column="36" />
+      <File FileName="LightHTML/HtmlElementFactory.cs" Line="25" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="LightHTML">
-            <Node name="LightHTML" expanded="True">
+          <Node name="LightHTML" expanded="True">
+            <Node name="LightHTML">
               <Node name="Models" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.LightHTML PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
 </Properties>
