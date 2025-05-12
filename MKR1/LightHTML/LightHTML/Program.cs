@@ -4,6 +4,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using LightHTML.Command;
 
 namespace LightHTML
 {
@@ -50,6 +51,25 @@ namespace LightHTML
             }
 
             Console.WriteLine($"\nMemory used by HTML tree: {memoryAfterWithFlyweight - memoryBeforeWithFlyweight} bytes");
+
+            // === Command Pattern Demo ===
+            Console.WriteLine("\n--- Command Pattern Demo ---");
+
+            var root = new LightElementNode("div");
+            var newParagraph = new LightElementNode("p");
+            newParagraph.AddChild(new LightTextNode("This paragraph was added via Command."));
+
+            var commandManager = new CommandManager();
+            var addParagraphCommand = new AddElementCommand(root, newParagraph);
+
+            commandManager.ExecuteCommand(addParagraphCommand);
+            Console.WriteLine("After Execute:");
+            Console.WriteLine(root.GetOuterHtml(1));
+
+            commandManager.UndoLast();
+            Console.WriteLine("After Undo:");
+            Console.WriteLine(root.GetOuterHtml(1));
+
             Console.ReadLine();
         }
 
