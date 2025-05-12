@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using LightHTML.Command;
+using LightHTML.State;
 
 namespace LightHTML
 {
@@ -70,7 +71,27 @@ namespace LightHTML
             Console.WriteLine("After Undo:");
             Console.WriteLine(root.GetOuterHtml(1));
 
+            
+
+
+            Console.WriteLine("\n--- State Pattern Demo ---");
+
+            var element = new LightElementNode("button");
+            element.AddChild(new LightTextNode("Submit"));
+
+            Console.WriteLine("Normal state:");
+            element.SetRenderState(new State.NormalState());
+            Console.WriteLine(element.GetOuterHtml(1));
+
+            Console.WriteLine("Highlighted state:");
+            element.SetRenderState(new State.HighlightedState());
+            Console.WriteLine(element.GetOuterHtml(1));
+
+            Console.WriteLine("Disabled state:");
+            element.SetRenderState(new State.DisabledState());
+            Console.WriteLine(element.GetOuterHtml(1));
             Console.ReadLine();
+
         }
 
         static async Task<string> DownloadTextFile(string url)
