@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using LightHTML.Command;
 using LightHTML.State;
+using LightHTML.Template;
 
 namespace LightHTML
 {
@@ -90,6 +91,11 @@ namespace LightHTML
             Console.WriteLine("Disabled state:");
             element.SetRenderState(new State.DisabledState());
             Console.WriteLine(element.GetOuterHtml(1));
+
+            Console.WriteLine("\n--- Template Method Pattern Demo ---");
+            var lifecycle = new ButtonLifecycle();
+            lifecycle.RenderElement("button", "Click me", new List<string> { "btn", "primary" });
+
             Console.ReadLine();
 
         }
