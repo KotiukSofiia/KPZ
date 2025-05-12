@@ -30,6 +30,11 @@ namespace LightHTML
             cssClasses.Add(cssClass);
         }
 
+        public List<LightNode> GetChildren()
+        {
+            return children;
+        }
+
         public override string GetOuterHtml(int indentLevel = 0)
         {
             string indent = new string(' ', indentLevel * 2);

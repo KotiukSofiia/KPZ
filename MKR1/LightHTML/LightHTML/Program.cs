@@ -11,12 +11,15 @@ namespace LightHTML
     {
         static async Task Main(string[] args)
         {
-            string url = "https://www.gutenberg.org/cache/epub/1513/pg1513.txt"; 
+            string url = "https://www.gutenberg.org/cache/epub/1513/pg1513.txt";
             string content = await DownloadTextFile(url);
 
-            string[] lines = content.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries).Take(50).ToArray();
+            string[] lines = content
+                .Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)
+                .Take(50)
+                .ToArray();
 
-            GC.Collect();  
+            GC.Collect();
             long memoryBeforeWithoutFlyweight = GC.GetTotalMemory(true);
             List<LightNode> htmlElementsWithoutFlyweight = CreateHTMLWithoutFlyweight(lines);
             long memoryAfterWithoutFlyweight = GC.GetTotalMemory(true);
@@ -32,14 +35,21 @@ namespace LightHTML
 
             Console.WriteLine($"Number of cached Flyweight nodes: {htmlElementsWithFlyweight.Count}");
 
-
-            foreach (var element in htmlElementsWithFlyweight)
+            Console.WriteLine("\n--- Depth-First Traversal ---");
+            var dfs = new DepthFirstIterator();
+            foreach (var node in dfs.Traverse(htmlElementsWithFlyweight.First()))
             {
-                Console.WriteLine(element.GetOuterHtml());
+                Console.WriteLine(node.GetOuterHtml(1));
+            }
+
+            Console.WriteLine("\n--- Breadth-First Traversal ---");
+            var bfs = new BreadthFirstIterator();
+            foreach (var node in bfs.Traverse(htmlElementsWithFlyweight.First()))
+            {
+                Console.WriteLine(node.GetOuterHtml(1));
             }
 
             Console.WriteLine($"\nMemory used by HTML tree: {memoryAfterWithFlyweight - memoryBeforeWithFlyweight} bytes");
-
             Console.ReadLine();
         }
 
@@ -63,19 +73,19 @@ namespace LightHTML
                 if (line.Length == 0)
                     continue;
 
-                if (line.StartsWith(" ")) 
+                if (line.StartsWith(" "))
                 {
                     node = new LightElementNode("blockquote");
                 }
-                else if (line.Length <= 20) 
+                else if (line.Length <= 20)
                 {
                     node = new LightElementNode("h2");
                 }
-                else if (line.Equals(lines[0])) 
+                else if (line.Equals(lines[0]))
                 {
                     node = new LightElementNode("h1");
                 }
-                else 
+                else
                 {
                     node = new LightElementNode("p");
                 }
@@ -99,19 +109,19 @@ namespace LightHTML
                 if (line.Length == 0)
                     continue;
 
-                if (line.StartsWith(" ")) 
+                if (line.StartsWith(" "))
                 {
                     node = nodeFactory.GetNode("blockquote");
                 }
-                else if (line.Length <= 20) 
+                else if (line.Length <= 20)
                 {
                     node = nodeFactory.GetNode("h2");
                 }
-                else if (line.Equals(lines[0])) 
+                else if (line.Equals(lines[0]))
                 {
                     node = nodeFactory.GetNode("h1");
                 }
-                else 
+                else
                 {
                     node = nodeFactory.GetNode("p");
                 }
