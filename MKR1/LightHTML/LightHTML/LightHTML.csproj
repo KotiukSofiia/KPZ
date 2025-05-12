@@ -13,6 +13,7 @@
     <None Remove="Command\" />
     <None Remove="State\" />
     <None Remove="Template\" />
+    <None Remove="Visitor\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -20,5 +21,6 @@
     <Folder Include="Command\" />
     <Folder Include="State\" />
     <Folder Include="Template\" />
+    <Folder Include="Visitor\" />
   </ItemGroup>
 </Project>

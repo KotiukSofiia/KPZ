@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using LightHTML.Visitor;
 
 namespace LightHTML
 {
@@ -7,5 +8,6 @@ namespace LightHTML
     {
         public abstract string GetOuterHtml(int indentLevel = 0);
         public abstract string GetInnerHtml(int indentLevel = 0);
+        public abstract void Accept(ILightNodeVisitor visitor);
     }
 }

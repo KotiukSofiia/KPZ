@@ -1,4 +1,5 @@
 ﻿using System;
+using LightHTML.Visitor;
 
 namespace LightHTML
 {
@@ -20,5 +21,11 @@ namespace LightHTML
         {
             return text;
         }
+        // LightTextNode.cs
+        public override void Accept(ILightNodeVisitor visitor)
+        {
+            visitor.VisitText(this);
+        }
+
     }
 }
