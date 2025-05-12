@@ -11,10 +11,12 @@
     <None Remove="Models\" />
     <None Remove="Iterators\" />
     <None Remove="Command\" />
+    <None Remove="State\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Iterators\" />
     <Folder Include="Command\" />
+    <Folder Include="State\" />
   </ItemGroup>
 </Project>

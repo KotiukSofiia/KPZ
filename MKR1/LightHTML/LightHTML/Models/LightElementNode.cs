@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using LightHTML.State;
 
 namespace LightHTML
 {
@@ -34,6 +35,12 @@ namespace LightHTML
         {
             return children;
         }
+
+        public void SetRenderState(IRenderState state)
+        {
+            state.ApplyState(this);
+        }
+
 
         public override string GetOuterHtml(int indentLevel = 0)
         {
