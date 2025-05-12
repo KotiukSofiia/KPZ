@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using LightHTML.Command;
 using LightHTML.State;
 using LightHTML.Template;
+using LightHTML.Visitor;
 
 namespace LightHTML
 {
@@ -95,6 +96,14 @@ namespace LightHTML
             Console.WriteLine("\n--- Template Method Pattern Demo ---");
             var lifecycle = new ButtonLifecycle();
             lifecycle.RenderElement("button", "Click me", new List<string> { "btn", "primary" });
+
+            Console.WriteLine("\n--- Visitor Pattern Demo ---");
+
+            var visitor = new LightNodeCounterVisitor();
+            htmlElementsWithFlyweight.First().Accept(visitor);
+
+            Console.WriteLine($"Total element nodes: {visitor.ElementCount}");
+            Console.WriteLine($"Total text nodes: {visitor.TextNodeCount}");
 
             Console.ReadLine();
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using LightHTML.State;
+using LightHTML.Visitor;
 
 namespace LightHTML
 {
@@ -39,6 +40,17 @@ namespace LightHTML
         public void SetRenderState(IRenderState state)
         {
             state.ApplyState(this);
+        }
+
+        // LightElementNode.cs
+        public override void Accept(ILightNodeVisitor visitor)
+        {
+            visitor.VisitElement(this);
+
+            foreach (var child in GetChildren()) // або: children
+            {
+                child.Accept(visitor);
+            }
         }
 
 
