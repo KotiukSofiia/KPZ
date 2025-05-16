@@ -70,7 +70,7 @@
   > [QrContentFormatterService.cs](https://github.com/KotiukSofiia/KPZ/blob/main/Lab%206/QrCodeGenerator/QrCodeGenerator/Services/QrContentFormatterService.cs)
 
 - **Repository Pattern** – доступ до даних через Entity Framework Core  
-  > [AppDbContext.cs](https://github.com/KotiukSofiia/KPZ/blob/main/Lab%206/QrCodeGenerator/QrCodeGenerator/Data/AppDbContext.cs)
+ > [/Migrations](https://github.com/KotiukSofiia/KPZ/tree/main/Lab%206/QrCodeGenerator/QrCodeGenerator/Migrations)
 
 - **Facade Pattern** – сервіси `ZipService` і `PdfService` приховують складність створення файлів  
   > [ZipService.cs](https://github.com/KotiukSofiia/KPZ/blob/main/Lab%206/QrCodeGenerator/QrCodeGenerator/Services/ZipService.cs)  
