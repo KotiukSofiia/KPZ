@@ -1,0 +1,23 @@
+﻿body {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+.navbar .nav-link {
+    color: #f1f1f1 !important;
+}
+
+
+a, label {
+    color: #ccc;
+}
+
+.table td, .table th {
+    color: #f1f1f1 !important;
+}
+
+thead th {
+    background-color: #343a40 !important;
+    color: white !important;
+}
+
