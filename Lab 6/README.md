@@ -6,7 +6,7 @@
   > [QrContentFormatterService.cs](https://github.com/KotiukSofiia/KPZ/blob/main/Lab%206/QrCodeGenerator/QrCodeGenerator/Services/QrContentFormatterService.cs)
 
 - Збереження даних про згенеровані QR-коди в базі даних  
-  > [AppDbContext.cs](https://github.com/KotiukSofiia/KPZ/blob/main/Lab%206/QrCodeGenerator/QrCodeGenerator/Data/AppDbContext.cs)
+  > [/Migrations](https://github.com/KotiukSofiia/KPZ/tree/main/Lab%206/QrCodeGenerator/QrCodeGenerator/Migrations)
 
 - Перегляд історії QR-кодів із фільтрацією та сортуванням  
   > [HistoryQueryService.cs](https://github.com/KotiukSofiia/KPZ/blob/main/Lab%206/QrCodeGenerator/QrCodeGenerator/Services/HistoryQueryService.cs)
