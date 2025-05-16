@@ -1,0 +1,87 @@
+﻿@model QrCodeGenerator.Models.ViewModels.HistoryViewModel
+
+@{
+    ViewData["Title"] = "Історія QR-кодів";
+}
+
+<h2>Історія згенерованих QR-кодів</h2>
+
+@if (!Model.Records.Any())
+{
+        <p>Історія пуста.</p>
+}
+else
+{
+        <form method="get" asp-action="Index" class="row g-2 mb-4 align-items-end">
+            <div class="col-auto">
+                <label for="type">Тип QR-коду:</label>
+                <select name="type" class="form-select">
+                    <option value="">Усі</option>
+                @foreach (var t in Model.AvailableTypes)
+                {
+                            <option value="@t" selected="@(Model.SelectedType == t ? "selected" : null)">@t</option>
+                }
+                </select>
+            </div>
+
+            <div class="col-auto">
+                <label for="sort">Сортувати за:</label>
+                <select name="sort" class="form-select">
+                    <option value="date" selected="@(Model.SelectedSort == "date" ? "selected" : null)">Датою</option>
+                    <option value="format" selected="@(Model.SelectedSort == "format" ? "selected" : null)">Форматом</option>
+                    <option value="text" selected="@(Model.SelectedSort == "text" ? "selected" : null)">Типом</option>
+                </select>
+            </div>
+
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Застосувати</button>
+            </div>
+        </form>
+
+        <table class="table table-bordered table-hover mt-3 table-dark">
+            <thead class="table-light">
+                <tr>
+                    <th>Зображення</th>
+                    <th>Контент</th>
+                    <th>Дата</th>
+                    <th>Тип</th>
+                    <th>Формат</th>
+                    <th>Дії</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var qr in Model.Records)
+            {
+                var fullImageUrl = $"{Context.Request.Scheme}://{Context.Request.Host}{qr.ImagePath}";
+                        <tr>
+                            <td>
+                                <img id="img-@qr.Id" src="@qr.ImagePath" width="100" />
+                            </td>
+                            <td style="max-width: 300px; word-wrap: break-word;">@qr.InputText</td>
+                                    <td>@qr.GeneratedAt.ToLocalTime().ToString("g")</td>
+                            <td>@qr.Type?.ToUpper()</td>
+                            <td>@qr.Format?.ToUpper()</td>
+                            <td>
+                                <a href="@qr.ImagePath" target="_blank" class="btn btn-sm btn-outline-primary mb-1">🔍 Переглянути</a>
+                                <button class="btn btn-sm btn-outline-secondary mb-1" onclick="copyQrImage('#img-@qr.Id')">📋 Копіювати зображення</button>
+                                <a href="mailto:?subject=QR-код&body=Ось мій QR-код:%0A@fullImageUrl" class="btn btn-sm btn-outline-success mb-1">✉️ Email</a>
+                                <a href="https://t.me/share/url?url=@fullImageUrl&text=Мій QR-код" target="_blank" class="btn btn-sm btn-outline-info mb-1">📲 Telegram</a>
+                                <a asp-action="Delete" asp-route-id="@qr.Id" class="btn btn-sm btn-danger mb-1">🗑️ Видалити</a>
+                            </td>
+                        </tr>
+            }
+            </tbody>
+        </table>
+
+        <form asp-action="ClearAll" method="post">
+            <button type="submit" class="btn btn-danger">Очистити всю історію</button>
+        </form>
+
+        <br />
+
+        <form asp-action="DownloadZip" method="post">
+            <button type="submit" class="btn btn-success mb-3">
+                <i class="bi bi-file-zip"></i> Завантажити всі як ZIP
+            </button>
+        </form>
+}
