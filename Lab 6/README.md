@@ -1,24 +1,53 @@
-# Lab 6 "Генератор QR-кодів"
+# Lab 6 "Генератор QR-кодів" - Котюк Софія ІПЗ-23-1
 
 ## Функціональність
 
-- Генерація QR-кодів із підтримкою форматів: **text, email, SMS, WiFi**  
-  > [QrContentFormatterService.cs](https://github.com/KotiukSofiia/KPZ/blob/main/Lab%206/QrCodeGenerator/QrCodeGenerator/Services/QrContentFormatterService.cs)
+### 1. Інтерфейс користувача
 
-- Збереження даних про згенеровані QR-коди в базі даних  
-  > [/Migrations](https://github.com/KotiukSofiia/KPZ/tree/main/Lab%206/QrCodeGenerator/QrCodeGenerator/Migrations)
+Головний екран:
+- Поле для введення тексту або URL
+- Випадаючий список для вибору типу QR-коду (текст, SMS, Wi-Fi тощо)
+- Вибір кольору QR-коду та фону
+- Вибір розміру QR-коду (у px)
+- Вибір формату (PNG, BMP)
+- Кнопка “Згенерувати QR”
+- Відображення згенерованого QR-коду в режимі реального часу
+- Кнопка “Очистити”
+- Посилання на екран “Історія”
 
-- Перегляд історії QR-кодів із фільтрацією та сортуванням  
-  > [HistoryQueryService.cs](https://github.com/KotiukSofiia/KPZ/blob/main/Lab%206/QrCodeGenerator/QrCodeGenerator/Services/HistoryQueryService.cs)
+Екран історії QR-кодів:
+Таблиця з історією згенерованих кодів:
+  - Зображення QR-коду
+  - Контент (текст/посилання)
+  - Тип, формат, дата генерації
+- Кнопки: “Переглянути”, “Копіювати зображення”, “Email”, “Telegram”, “Видалити”
+- Кнопка “Очистити всю історію”
 
-- Експорт QR-кодів у **PDF**  
-  > [PdfService.cs](https://github.com/KotiukSofiia/KPZ/blob/main/Lab%206/QrCodeGenerator/QrCodeGenerator/Services/PdfService.cs)
+Додатково:
+- Підтримка темної і світлої теми
 
-- Завантаження QR-кодів у **ZIP**  
-  > [ZipService.cs](https://github.com/KotiukSofiia/KPZ/blob/main/Lab%206/QrCodeGenerator/QrCodeGenerator/Services/ZipService.cs)
+### 2. Логіка генерації QR-кодів
 
-- Привітальний інтерфейс Razor View  
-  > [Index.cshtml](https://github.com/KotiukSofiia/KPZ/blob/main/Lab%206/QrCodeGenerator/QrCodeGenerator/Views/Home/Index.cshtml)
+Генерація:
+- Валідація введеного контенту
+- Генерація QR-коду за допомогою бібліотеки
+- Миттєве оновлення QR після зміни параметрів (текст, кольори, розмір)
+  
+Збереження:
+- Збереження у вибраному форматі (PNG або BMP)
+- Ім’я файлу автоматично формується на основі дати й часу
+- Копіювання QR до буфера обміну
+  
+Історія:
+- Додавання запису при кожному збереженні
+- Фіксація тексту, дати, типу коду та формату
+- Можливість видалення окремих записів або всієї історії
+
+### 3. Збереження даних
+
+- Зберігання історії QR-кодів у базі даних
+- Автоматичне завантаження історії при запуску
+- Очищення історії за кнопкою
 
 
 ## Programming Principles
