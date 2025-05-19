@@ -7,17 +7,18 @@ namespace QrCodeGenerator.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IQRService _qrService;
-        private readonly PdfService _pdfService;
-        private readonly AppDbContext _db;
-        private readonly IQrContentFormatterService _formatter;
+        private readonly ICommand<(QrInputModel, string), CommandResult> _generateCommand;
+        private readonly ICommand<QrInputModel, CommandResult> _previewCommand;
+        private readonly ICommand<string, CommandResult> _downloadCommand;
 
-        public HomeController(IQRService qrService, PdfService pdfService, AppDbContext db, IQrContentFormatterService formatter)
+        public HomeController(
+            ICommand<(QrInputModel, string), CommandResult> generateCommand,
+            ICommand<QrInputModel, CommandResult> previewCommand,
+            ICommand<string, CommandResult> downloadCommand)
         {
-            _qrService = qrService;
-            _pdfService = pdfService;
-            _db = db;
-            _formatter = formatter;
+            _generateCommand = generateCommand;
+            _previewCommand = previewCommand;
+            _downloadCommand = downloadCommand;
         }
 
         [HttpGet]
@@ -29,67 +30,45 @@ namespace QrCodeGenerator.Controllers
         [HttpPost]
         public IActionResult Generate(QrInputModel input, string format = "png")
         {
-            if (!ModelState.IsValid)
-                return View("Index", input);
+            var result = _generateCommand.Execute((input, format));
 
-            string content = _formatter.Format(input);
-
-            if (string.IsNullOrWhiteSpace(content))
-                return RedirectToAction("Index");
-
-            string imagePath = _qrService.GenerateQrCode(
-                content,
-                format,
-                input.ForegroundColor,
-                input.BackgroundColor,
-                input.Size
-            );
-
-            var record = new QrCodeRecord
+            if (!result.Success)
             {
-                InputText = content,
-                ImagePath = imagePath,
-                Format = format,
-                Type = input.QrType,
-                GeneratedAt = DateTime.UtcNow
-            };
+                ModelState.AddModelError("", result.Message);
+                return View("Index", input);
+            }
 
-            _db.QrCodes.Add(record);
-            _db.SaveChanges();
+            var data = (dynamic)result.Data;
+            ViewBag.QrPath = data.QrPath;
+            ViewBag.InputText = data.InputText;
 
-            ViewBag.QrPath = imagePath;
-            ViewBag.InputText = content;
-
-            return View("Index");
+            return View("Index", input);
         }
 
         [HttpPost]
-        public IActionResult Preview(QrInputModel input, string format = "png")
+        public IActionResult Preview(QrInputModel input)
         {
-            string content = _formatter.Format(input);
+            var result = _previewCommand.Execute(input);
 
-            if (string.IsNullOrWhiteSpace(content))
-                return BadRequest();
+            if (!result.Success)
+            {
+                return BadRequest(result.Message);
+            }
 
-            var imageStream = _qrService.GenerateQrImageStream(
-                content,
-                format,
-                input.ForegroundColor,
-                input.BackgroundColor,
-                input.Size
-            );
-
-            return File(imageStream, $"image/{format}");
+            return File((MemoryStream)result.Data, "image/png");
         }
 
         [HttpPost]
         public IActionResult DownloadPdf(string imagePath)
         {
-            if (string.IsNullOrEmpty(imagePath))
-                return RedirectToAction("Index");
+            var result = _downloadCommand.Execute(imagePath);
 
-            var pdfBytes = _pdfService.GeneratePdfWithImage(imagePath);
-            return File(pdfBytes, "application/pdf", "QRCode.pdf");
+            if (!result.Success)
+            {
+                return BadRequest(result.Message);
+            }
+
+            return File((byte[])result.Data, "application/pdf", "QRCode.pdf");
         }
     }
 }
