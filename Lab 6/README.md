@@ -77,3 +77,4 @@
   > [ZipService.cs](https://github.com/KotiukSofiia/KPZ/blob/main/Lab%206/QrCodeGenerator/QrCodeGenerator/Services/ZipService.cs)  
   > [PdfService.cs](https://github.com/KotiukSofiia/KPZ/blob/main/Lab%206/QrCodeGenerator/QrCodeGenerator/Services/PdfService.cs)
 
+![telegram-cloud-photo-size-2-5285071757717402129-y](https://github.com/user-attachments/assets/974e7338-d178-47bc-975f-bc73e1784009)
