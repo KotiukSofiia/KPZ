@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using QrCodeGenerator.Commands;
 using QrCodeGenerator.Data;
+using QrCodeGenerator.Models;
 using QrCodeGenerator.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,6 +27,12 @@ void ConfigureServices(IServiceCollection services, IConfiguration config)
     services.AddScoped<ZipService>();
     services.AddScoped<IQrContentFormatterService, QrContentFormatterService>();
     services.AddScoped<IHistoryQueryService, HistoryQueryService>();
+
+   
+    services.AddScoped<IRepository, QrCodeRepository>();
+    services.AddScoped<ICommand<(QrInputModel, string), CommandResult>, GenerateQrCodeCommand>();
+    services.AddScoped<ICommand<QrInputModel, CommandResult>, PreviewQrCodeCommand>();
+    services.AddScoped<ICommand<string, CommandResult>, DownloadPdfCommand>();
 }
 
 void ConfigureMiddleware(WebApplication app)
