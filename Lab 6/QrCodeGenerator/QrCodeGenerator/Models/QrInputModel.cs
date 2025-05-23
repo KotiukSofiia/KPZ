@@ -5,7 +5,6 @@ public class QrInputModel
     [Required(ErrorMessage = "Оберіть тип QR-коду")]
     public string QrType { get; set; }
 
-    [Required(ErrorMessage = "Введіть текст")]
     public string? Text { get; set; }
 
     [EmailAddress(ErrorMessage = "Некоректний Email")]
