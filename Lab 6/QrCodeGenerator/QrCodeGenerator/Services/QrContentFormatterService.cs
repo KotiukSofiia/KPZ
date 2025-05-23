@@ -1,4 +1,5 @@
 ﻿using QrCodeGenerator.Models;
+using QrCodeGenerator.Services.Formatting;
 using System.Text.RegularExpressions;
 
 namespace QrCodeGenerator.Services
@@ -10,29 +11,17 @@ namespace QrCodeGenerator.Services
 
     public class QrContentFormatterService : IQrContentFormatterService
     {
-        public string Format(QrInputModel model)
+        private readonly IEnumerable<IQrContentStrategy> _strategies;
+
+        public QrContentFormatterService(IEnumerable<IQrContentStrategy> strategies)
         {
-            return model.QrType switch
-            {
-                "Email" when IsValidEmail(model.EmailTo) =>
-                    $"mailto:{model.EmailTo}?subject={Uri.EscapeDataString(model.Subject ?? "")}&body={Uri.EscapeDataString(model.Body ?? "")}",
-
-                "SMS" when IsValidPhone(model.PhoneNumber) =>
-                    $"SMSTO:{model.PhoneNumber}:{model.SmsMessage ?? ""}",
-
-                "WiFi" when !string.IsNullOrWhiteSpace(model.WifiSSID) =>
-                    $"WIFI:T:{(model.WifiEncryption ?? "WPA")};S:{model.WifiSSID};P:{model.WifiPassword ?? ""};;",
-
-                _ => model.Text ?? ""
-            };
+            _strategies = strategies;
         }
 
-        private bool IsValidEmail(string? email) =>
-            !string.IsNullOrWhiteSpace(email) &&
-            Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
-
-        private bool IsValidPhone(string? phone) =>
-            !string.IsNullOrWhiteSpace(phone) &&
-            Regex.IsMatch(phone, @"^\+?\d{10,}$");
+        public string Format(QrInputModel model)
+        {
+            var strategy = _strategies.FirstOrDefault(s => s.CanHandle(model));
+            return strategy?.Format(model) ?? string.Empty;
+        }
     }
 }
